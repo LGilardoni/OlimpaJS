@@ -1,0 +1,282 @@
+/* SUBSCRIBE BTN */
+.form-btn {
+    background-color: lightgray;
+    width: 110px;
+    height: 2.3em;
+    color: black;
+    border: none;
+    border-top-right-radius: .5em;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+    font-size: .7em;
+    font-weight: 500;
+    font-family: $font__lato;
+}
+
+/* FOOTER */
+footer{
+    background-color: #282d32;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        padding-top: 3em;
+        color:white;
+        font-size: 1rem;
+        margin-bottom: .6em;
+    }
+
+    a {
+        color:white;
+        font-size: .7rem;
+    }
+
+    a:hover {
+        color: $color__lightyellow;
+    } 
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding-bottom: 2em;
+    
+        /* CONTACTO SECTION */
+        .contacto {
+
+            ul {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+
+            li {
+            color: white;
+            font-size: .7rem;
+            padding: .2em;
+
+            .maps {
+                padding-right: 2px;
+                color: $color__lightyellow;
+                font-size: 13px;
+                line-height: 1;
+                margin-right: .3em;
+            }
+
+            .phone {
+                padding-right: 2px;
+                color: $color__lightyellow;
+                font-size: 12px;
+                line-height: 1;
+                margin-right: .3em;
+            }
+
+            .mail {
+                padding-right: 2px;
+                color: $color__lightyellow;
+                font-size: 15px;
+                line-height: 1;
+                margin-right: .3em;
+                }
+                }
+            }
+        }
+        
+        /* REDES SECTION */
+        .redes {
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: .5em;
+        
+                li {
+                    margin: 0 .2em;
+        
+                    a {
+                        font-size: 1.2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: rgba(255, 255, 255, 0.1);
+                        color: white;
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        transition: ease-in-out 0.4s;
+        
+                        .redes__icon--fb {
+                            font-size: 1.1em;
+                            border-radius: .4em;
+                            overflow: hidden;
+                        }
+        
+                        .redes__icon--ig {
+                            width: 1.27em;
+                        }
+
+                        .redes__icon--pn {
+                            border-radius: .2em;
+                        }
+                    }
+        
+                    a:hover{
+                        background-color: $color__lightyellow;
+                    }
+                }
+            }
+        }
+    
+        /* SUBSCRITION SECTION */
+        .footer__subscription {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 3em;
+
+            .footer__form {
+            padding-top: 3em;
+            display: flex;
+            flex-flow: row;
+        
+            input {
+                height: 1.6em;
+                border: .15em solid white;
+                border-top-left-radius: .4em;
+                border-bottom-left-radius: .3em;
+                overflow: hidden;
+                padding: .3em .7em;
+                outline: none;
+                font-family: $font__lato;
+                }
+            }
+
+            /* ARREPENTIMIENTO BTN */
+            .arrepentimiento {
+                a {
+                font-size: .8rem;
+                color: $color__lightyellow;
+                border: 1px solid $color__lightyellow;
+                border-radius: .4em;
+                padding: 1em;
+                font-weight: 300;
+                transition: .3s;
+                }
+
+                a:hover {
+                    color: whitesmoke;
+                    border: 1px solid whitesmoke;
+                }
+            }
+        }
+
+        /* SITE MAP SECTION */
+        .mapa__list {
+
+            a { 
+                transition: all 0.3s ease-in-out 0s;
+            }
+            .chevron--right {
+                padding-right: 2px;
+                color: $color__lightyellow;
+                font-size: 15px;
+                line-height: 1;
+                margin-right: .3em;
+            }
+        }
+        }
+    
+    /* PAYMENT + SHIPMENT SECTION */
+    .footer__payment {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: white;
+        background-color: whitesmoke;
+        gap: 2em;
+        padding: .1em;
+    
+        p{
+            color: black;
+            margin-left: .8em;
+            font-weight: 600;
+        }
+    
+        img{
+            width: 200px;
+            height: auto;
+            margin-right: 1.7em;
+            max-height: 19px;
+        }
+    }
+    
+    /* COPYRIGTH SECTION */
+    .copyright {
+    p {
+        color: white;
+        text-align: center;
+        margin-left: .8em;
+        padding: .4em;
+    }
+    }
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 800px) {
+
+    footer {
+
+        h3 {
+            padding-top: 1em;
+        }
+
+        .footer {
+            display: flex;
+            flex-flow: column;
+            align-items: baseline;
+            padding-bottom: 2em;
+            padding-left: 1.5em;
+
+            .contacto {
+                li {
+                font-size: .9rem;
+                padding: .2em;
+                }
+            }
+
+            .redes {
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                }
+            
+                li{
+                    margin: 0 .2em;
+                }
+            }
+            
+            .footer__subscription {
+                align-self: center;
+                gap: 2em;
+            } 
+        }
+
+        .footer__payment {
+
+            img {
+            margin: 0;
+            width: unset;
+            }
+
+            .ship {
+            display: none;
+            }
+        }
+    }
+}
+
