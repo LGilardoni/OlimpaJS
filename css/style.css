@@ -1000,6 +1000,10 @@ h2 {
   transform: scaleY(0);
 }
 
+body.dark .shopping-cart {
+  color: #fff;
+}
+
 /* WHATSAPP ICON */
 #whatsapp {
   position: fixed;
