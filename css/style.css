@@ -642,7 +642,7 @@ h2 {
 .products__main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 4em;
+  gap: 2em;
   margin: 4em 5em;
 }
 
