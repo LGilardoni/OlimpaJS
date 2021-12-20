@@ -1309,6 +1309,10 @@ body.dark .caracteristicas-title {
   color: #F1F1F1;
 }
 
+body.dark .caracteristicas-title h2 {
+  color: #F1F1F1;
+}
+
 .caracteristicas-container {
   margin-top: 200px;
   margin-bottom: 200px;
@@ -1729,6 +1733,10 @@ body.dark .form-check-label {
   font-weight: 400;
 }
 
+body.dark .header__launch .header__emojis h2 {
+  color: #F1F1F1;
+}
+
 .header__launch .header__emojis h2::after {
   content: '';
   position: absolute;
@@ -1752,6 +1760,10 @@ body.dark .form-check-label {
   text-align: end;
   font-size: 1rem;
   border-bottom: 1px solid #B2AA0D;
+}
+
+body.dark .header__launch .more a {
+  color: #F1F1F1;
 }
 
 .header__launch .more span {
