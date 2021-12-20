@@ -16,6 +16,10 @@
   animation: loader-rotate 800ms ease-in infinite;
 }
 
+body.dark .loader {
+  background: #0a0908;
+}
+
 .hidden {
   display: none;
 }
