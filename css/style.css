@@ -1082,6 +1082,22 @@ body.dark .navbar.active .nav-link {
   color: #F1F1F1;
 }
 
+.navbar.active .logo {
+  display: block;
+}
+
+body.dark .navbar.active .logo {
+  display: none;
+}
+
+.navbar.active .logo-blanco {
+  display: none;
+}
+
+body.dark .navbar.active .logo-blanco {
+  display: block;
+}
+
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
   color: #555;
