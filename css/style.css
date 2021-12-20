@@ -812,6 +812,179 @@ h2 {
   border-color: #77B255;
 }
 
+.products__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+  margin: 4em 5em;
+}
+
+.products__section .products__card {
+  display: flex;
+  flex-flow: column;
+  border-radius: .5em;
+  overflow: hidden;
+  box-shadow: 0 0px 1px .1px black;
+  transition: 300ms ease-in-out;
+  border-bottom: 3px solid #D9A27B;
+  position: relative;
+}
+
+.products__section .products__card .products__image {
+  width: 100%;
+  flex-basis: 200px;
+  position: relative;
+  transition: all ease-in-out 0.4s;
+}
+
+.products__section .products__card .products__image .icons {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+
+.products__section .products__card .products__image .icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #4F4141;
+  background: rgba(255, 255, 255, 0.8);
+  width: 36px;
+  height: 36px;
+  transition: color 0.3s;
+  margin: 0 6px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+}
+
+.products__section .products__card .products__image .icons a:hover {
+  color: #151515;
+  background: #F3D848;
+}
+
+.products__section .products__card .products__image .icons span {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.products__section .products__card .products__image:hover {
+  transform: scale(1.1);
+}
+
+.products__section .products__card #prod1 {
+  background: url("../images/productos/prod1.jpg") no-repeat 90% 80%/cover;
+}
+
+.products__section .products__card #prod2 {
+  background: url("../images/productos/prod2.jpg") no-repeat center/cover;
+}
+
+.products__section .products__card #prod3 {
+  background: url("../images/productos/prod3.jpg") no-repeat 100% 90%/cover;
+}
+
+.products__section .products__card #prod4 {
+  background: url("../images/productos/prod4.jpg") no-repeat center/cover;
+}
+
+.products__section .products__card #prod5 {
+  background: url("../images/productos/prod5.jpg") no-repeat 100% 100%/cover;
+}
+
+.products__section .products__card #prod6 {
+  background: url("../images/productos/prod6.jpg") no-repeat center/cover;
+}
+
+.products__section .products__card #prod7 {
+  background: url("../images/productos/prod7.jpg") no-repeat center/cover;
+}
+
+.products__section .products__card #prod8 {
+  background: url("../images/productos/prod8.jpg") no-repeat 100% 30%/cover;
+}
+
+.products__section .products__card #prod9 {
+  background: url("../images/productos/prod9.jpg") no-repeat 100% 30%/cover;
+}
+
+.products__section .products__card #prod10 {
+  background: url("../images/productos/prod10.jpg") no-repeat 100% 30%/cover;
+}
+
+.products__section .products__card #prod11 {
+  background: url("../images/productos/prod11.jpg") no-repeat 100% 30%/cover;
+}
+
+.products__section .products__card .products__text {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  flex: 1;
+  padding: 1.5em 1em;
+  text-align: center;
+  background-color: white;
+}
+
+.products__section .products__card .products__text h3 {
+  font-size: 1.1em;
+  line-height: 1.1em;
+  font-weight: 600;
+  color: #4F4141;
+}
+
+.products__section .products__card .products__text .products__sale {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.products__section .products__card .products__text .products__sale .products__oldprice {
+  font-family: "Raleway", sans-serif;
+  text-decoration: line-through;
+  color: #B28604;
+  filter: saturate(0.53);
+}
+
+.products__section .products__card .products__text .products__sale .products__newprice {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #FFCB00;
+}
+
+.products__section .products__card .products__text .products__span {
+  color: #B28604;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.products__section .products__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 15px 1px #FFCB00;
+  box-shadow: 0 5px 15px -5px black;
+}
+
+.products__section .products__card:hover .icons {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.products__section hr {
+  width: 60%;
+  margin: auto;
+  border: 0,1px;
+  border-style: solid;
+  border-color: #77B255;
+}
+
 /* NAVEGACION DE PAGINA */
 .page-link {
   color: #94C75B;
