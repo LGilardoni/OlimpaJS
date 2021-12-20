@@ -1704,3 +1704,59 @@ body.dark .form-check-label {
   color: #2bc72b;
   margin-bottom: 1rem;
 }
+
+/* HEADER WITH EMOJIS */
+/* VER TODO */
+.header__launch {
+  display: flex;
+  flex: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: -4em;
+}
+
+.header__launch .header__emojis {
+  margin: 3em 5em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: .7em;
+}
+
+.header__launch .header__emojis h2 {
+  position: relative;
+  font-weight: 400;
+}
+
+.header__launch .header__emojis h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60%;
+  height: 2px;
+  background: #B2AA0D;
+  bottom: 10;
+  left: 0;
+}
+
+.header__launch .more {
+  margin: 1em 5.5em -1.5em 0;
+}
+
+.header__launch .more a {
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  color: #4F4141;
+  width: 100%;
+  text-align: end;
+  font-size: 1rem;
+  border-bottom: 1px solid #B2AA0D;
+}
+
+.header__launch .more span {
+  color: #B2AA0D;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
