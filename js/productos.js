@@ -19,7 +19,7 @@ apiCall()
 // Funcion para crear cards de Productos
 function displayProducts(elt) {
 let elements = "";
-let itemsElements = document.querySelector(".products__section");
+let itemsElements = document.querySelector(".products__main");
 
 elt.forEach((products) => {
     elements += 
@@ -48,7 +48,8 @@ loader.classList.add("hidden");
 }
 
 function displayError(elt) {
-let itemsElements = document.querySelector(".products__section");
+let itemsElements = document.querySelector(".products__main
+                                           ");
 let msg = "";
 msg += `<p> Oops...un erreur : <br><i>${elt}<i><p>`;
 itemsElements.innerHTML = msg;
