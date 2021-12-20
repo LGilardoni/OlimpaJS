@@ -1083,7 +1083,8 @@ body.dark .navbar.active .nav-link {
 }
 
 .navbar.active .logo {
-  display: block;
+  display: inline-block;
+  width: 11em;
 }
 
 body.dark .navbar.active .logo {
